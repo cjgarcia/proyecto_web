@@ -20,5 +20,8 @@ from a_leña import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.IndexView.as_view(), name = 'index')
+    path('', views.IndexView.as_view(), name = 'index'),
+    path('info/',views.InfoView.as_view(), name = 'info'),
+    path('reservar/',views.ResevarView.as_view(), name = 'reservar'),
+    path('mi_reserva/', views.Mi_reservaView.as_view(), name = 'mi_reserva')
 ]
