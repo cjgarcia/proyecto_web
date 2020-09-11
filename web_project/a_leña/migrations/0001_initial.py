@@ -17,8 +17,8 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('nombre', models.CharField(help_text='Agrede su nombre', max_length=50)),
                 ('apellido', models.CharField(help_text='Agrede su Apellido', max_length=50)),
-                ('Fecha', models.DateTimeField()),
-                ('numero_comensales', models.IntegerField()),
+                ('Fecha', models.DateTimeField(help_text='Indique la decha y la hora')),
+                ('numero_comensales', models.IntegerField(help_text='Indique en munero de personas')),
             ],
         ),
     ]

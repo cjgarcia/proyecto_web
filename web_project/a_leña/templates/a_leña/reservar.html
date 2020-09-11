@@ -1,7 +1,15 @@
 {% extends 'a_leña\index.html' %}
+
 {% block conted%}
+
+<h1>haz tu reserva y vive la expericia</h1>
+
 <form method="POST">
-   {{ form.as_p }}
-    <input type="submit" value="Reservar">
+    {% csrf_token %}
+   <table>
+       {{ form.as_table}}
+    </table>
+  <input type="submit" value="Reservar">
 </form>
+
 {% endblock %}
