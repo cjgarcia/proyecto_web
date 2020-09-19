@@ -1,5 +1,15 @@
-{% extends 'a_leña\index.html' %}
+{% extends 'a_leña/index.html' %}
 
-{% block conted%}
-
+{% block content%}
+<div class="container">
+    <div class="row">
+        <div class="col-6 my-3">
+            <h3>Detalles Reserva:</h3>
+            <dl>
+                <dt>Nombre</dt>
+                <dd>{{ reserva }}</dd>
+            </dl>
+        </div>
+    </div>    
+</div>
 {% endblock %}

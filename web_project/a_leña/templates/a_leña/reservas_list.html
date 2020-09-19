@@ -1,0 +1,10 @@
+{% extends 'a_leña/index.html' %}
+
+{% block content %}
+<h3>Lista Reservas:</h3>
+<ul>
+    {% for reserva in reservas_list %}
+        <li>{{ reserva }}</li>
+    {% endfor %}
+</ul>
+{% endblock%}
